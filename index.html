@@ -488,14 +488,16 @@
                     <!-- Include the EmailJS SDK -->
                     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
                     <script>
-                        emailjs.init('Fn6N3eQHurfaiLqzf');
+                        emailjs.init('IKDsk4PTdULXyPGOF');
                         const form = document.getElementById('contactForm');
                         const sendEmail = (e) => {
                             e.preventDefault();
                             document.querySelector('.loading').style.display = 'block';
                             document.querySelector('.error-message').style.display = 'none';
                             document.querySelector('.sent-message').style.display = 'none';
-                            emailjs.sendForm('service_8led4mx', 'template_9iwr3oz', form)
+                            emailjs.sendForm('service_iurlhvk', 'template_k5chq6i', form)
+                            
+
                                 .then(
                                     (response) => {
                                         console.log('SUCCESS!', response);
